@@ -1,14 +1,14 @@
 # ==========================================
 # Voorbeeld Opdracht
 #
-# Maak een woordenboek genaamd 'fruit' met daarin de sleutels 'appel' en 'banaan'.
-# Geef 'appel' de waarde 'rood' en 'banaan' de waarde 'geel'.
-# Print vervolgens de kleur van de banaan door de sleutel 'banaan' te gebruiken.
+# Maak een dictionary genaamd 'fruit' met daarin de sleutels 'appel' en 'banaan'.
+# Geef 'appel' de value 'rood' en 'banaan' de value 'geel'.
+# Print vervolgens de kleur van de banaan door de key 'banaan' te gebruiken.
 #
 # Verwachte uitkomst:  geel
 # ==========================================
 
-# dictionary met kleuren als waarden
+# dictionary met kleuren als values
 fruit = {'appel': 'rood', 'banaan': 'geel'}
 
 # print de kleur van de banaan
@@ -31,7 +31,7 @@ print(fruit['banaan'])  # Het resultaat is: geel
 # Verwachte uitkomst: True, True, False
 #
 # Opdracht 1c:
-# Itereer door de sleutel-waarde paren en toon per regel de sleutel en de waarde.
+# Itereer door de key-waarde paren en toon per regel de key en de waarde.
 # Gebruik hierbij een for-loop en de items() methode.
 #
 # Verwachte uitkomst:
@@ -41,15 +41,15 @@ print(fruit['banaan'])  # Het resultaat is: geel
 #   Duitsland de
 #
 # Opdracht 1d:
-# Voeg het sleutel-waarde paar ‘Zweden’ : ‘sw’ toe aan het woordenboek 'domeinen'.
-# Wijzig de waarde van de sleutel ‘Zweden’ in ‘se’.
-# Het sleutel waarde paar ‘Zweden’ : ‘se’ moet nu in het woordenboek staan.
+# Voeg het key-waarde paar ‘Zweden’ : ‘sw’ toe aan het woordenboek 'domeinen'.
+# Wijzig de waarde van de key ‘Zweden’ in ‘se’.
+# Het key waarde paar ‘Zweden’ : ‘se’ moet nu in het woordenboek staan.
 # Print het woordenboek na deze wijzigingen.
 #
 # Verwachte uitkomst: {'NL': 'Nederland', 'US': 'Verenigde Staten', 'DE': 'Duitsland', 'SE': 'Zweden'}
 
 # Opdracht 1e:
-# Gebruik een dictionary comprehension om de sleutels en waarden van het woordenboek te verwisselen.
+# Gebruik een dictionary comprehension om de keys en waarden van het woordenboek te verwisselen.
 # Gebruik vervolgens een dictionary comprehension om alle landnamen te converteren naar hoofdletters.
 # Print het woordenboek na deze wijzigingen.
 #
@@ -64,7 +64,7 @@ print(domeinen.get('Nederland') != None)  # Het resultaat is: True
 print(domeinen.get('Verenigde Staten') != None)  # Het resultaat is: True
 print(domeinen.get('India') != None)  # Het resultaat is: False
 
-# Opdracht 1c: itereer door de sleutel-waarde paren en toon per regel de sleutel en de waarde
+# Opdracht 1c: itereer door de key-waarde paren en toon per regel de key en de waarde
 for key, value in domeinen.items():
     print(key, value)
 
@@ -73,15 +73,15 @@ for key, value in domeinen.items():
 #   Verenigde Staten us
 #   Duitsland de
 
-# Opdracht 1d: voeg een sleutel-waarde paar toe en wijzig de waarde van de sleutel
-#     Voeg het sleutel-waarde paar ‘Zweden’ : ‘sw’ toe.
+# Opdracht 1d: voeg een key-waarde paar toe en wijzig de waarde van de key
+#     Voeg het key-waarde paar ‘Zweden’ : ‘sw’ toe.
 domeinen['Zweden'] = 'sw'
-#     Wijzig de waarde van de sleutel ‘Zweden’ in ‘se’.
+#     Wijzig de waarde van de key ‘Zweden’ in ‘se’.
 domeinen['Zweden'] = 'se'
 
 
 # Opdracht 1e:
-# in deze dictionary comprehension worden de sleutels en waarden van het woordenboek verwisseld
+# in deze dictionary comprehension worden de keys en waarden van het woordenboek verwisseld
 domeinen = {value: key for key, value in domeinen.items()}  # Uitkomst: {'nl': 'Nederland', 'us': 'Verenigde Staten', 'de': 'Duitsland', 'se': 'Zweden'}
 # landnamen worden omgezet naar hoofdletters
 domeinen = {key: value.upper() for key, value in domeinen.items()}  # Uitkomst: {'NL': 'Nederland', 'US': 'Verenigde Staten', 'DE': 'Duitsland', 'SE': 'Zweden'}
@@ -95,7 +95,7 @@ print(domeinen)
 # Maak de volgende deelopdrachten. Print de uitkomst van elke opdracht om te zien of je het juiste resultaat krijgt.
 #
 # Opdracht 2a:
-# Maak een woordenboek van de volgende vriendengroep met hun voornaam als sleutel en hun leeftijd als waarde.
+# Maak een woordenboek van de volgende vriendengroep met hun voornaam als key en hun leeftijd als waarde.
 # Kees is 25, Amber is 30, Bart is 28, Johan is 27 en Eva is 26.
 #
 # Opdracht 2b:
@@ -155,7 +155,7 @@ print(friends)
 #
 # Opdracht 3a:
 # Genereer een lijst met 1000 random getallen tussen 0 en 1 miljoen.
-# Genereer een woordenboek die dezelfde random getallen heeft als de lijst. De keys zijn de random getallen en alle values zijn None.
+# Genereer een woordenboek die dezelfde random getallen heeft als de lijst. De keys zijn de random getallen en alle waarden zijn None.
 #
 # Opdracht 3b:
 # Maak een variabele counter_list aan en zet deze op 0
