@@ -90,6 +90,8 @@ print(domeinen)
 
 
 
+
+
 # ==========================================
 # Opdracht 2:
 # Maak de volgende deelopdrachten. Print de uitkomst van elke opdracht om te zien of je het juiste resultaat krijgt.
@@ -146,6 +148,8 @@ print(friends)
 
 
 
+
+
 # ==========================================
 # Opgave 3:
 
@@ -155,7 +159,9 @@ print(friends)
 #
 # Opdracht 3a:
 # Genereer een lijst met 1000 random getallen tussen 0 en 1 miljoen.
-# Genereer een woordenboek die dezelfde random getallen heeft als de lijst. De keys zijn de random getallen en alle waarden zijn None.
+# Genereer dan een woordenboek die dezelfde random getallen heeft als de lijst. De keys zijn de random getallen en alle waarden zijn None.
+# Voorbeeld list: [63459, 27, ...enz, ...enz]
+# Voorbeeld dictionary: {63459: None, 27: None, ...enz, ...enz}
 #
 # Opdracht 3b:
 # Maak een variabele counter_list aan en zet deze op 0
@@ -171,11 +177,12 @@ print(friends)
 import random
 import time
 
+#   3a
 #   random.randint() genereert een random getal tussen de 2 meegegeven waarden (hier dus tussen de 0 en 1000000).
 #   We willen 1000 keer een random getal genereren. Dat doet de for loop.
 #   In een for loop moet je altijd een naam geven aan de loop variabele.
 #   In dit geval gebruiken we de loop variabele verder niet, het is dan conventie om deze als underscore '_' te schrijven.
-random_list = [random.randint(0, 1000000) for _ in range(1000)]
+random_list = [random.randint(0, 1000000) for _ in range(1000)]  # uitkomst
 
 #   Vult de dictionary met dezelfde random getallen als keys en None als values.
 #   Voor de opdracht maakt het niet uit wat de waarden zijn.
@@ -183,6 +190,7 @@ random_list = [random.randint(0, 1000000) for _ in range(1000)]
 random_dict = {i: None for i in random_list}
 
 
+#  3b
 # time.time() geeft de huidige tijd in seconden terug.
 # Door voor en na de loop de tijd op te vragen, en tegen elkaar weg te strepen (end - start), weet je hoe lang de loop duurde.
 start = time.time()

@@ -73,21 +73,23 @@ print(verzameling_colors1.symmetric_difference(verzameling_colors2))
 #     {5, 11, 16, 22, 33}
 #     {11, 22}
 #
-# (De volgorde van de values in de verzamelingen is niet belangrijk, die kan namelijk veranderen omdat een set unordered is.)
+# (LET OP: De volgorde van de values in de verzamelingen is niet belangrijk, die kan namelijk veranderen omdat een set unordered is.)
 # ==========================================
-
 
 verzameling1 = {11, 22, 33}
 verzameling2 = {5, 11, 16, 22}
 
 #     Haalt de values uit verzameling1 die niet in verzameling2 zitten.
-print(verzameling1 - verzameling2)
+print(verzameling1 - verzameling2)  # Het resultaat is: {33}
+
 #     Haalt de values uit verzameling2 die niet in verzameling1 zitten.
-print(verzameling2 - verzameling1)
+print(verzameling2 - verzameling1)  # De getallen in de set zijn: 5, 16
+
 #     Voegt de values van verzameling1 en verzameling2 samen.
-print(verzameling1 | verzameling2)
+print(verzameling1 | verzameling2)  # De getallen in de set zijn: 33, 5, 11, 16, 22
+
 #     Haalt de values uit verzameling1 en verzameling2 die in beide sets zitten.
-print(verzameling1 & verzameling2)
+print(verzameling1 & verzameling2)  # De getallen in de set zijn: 11, 22
 
 
 
