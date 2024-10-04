@@ -150,7 +150,8 @@ print(cijfers)  # Het resultaat is: {'Jaap': 4.5, 'Winnie': 6.0, 'Jeroen': 10, '
 
 # ==========================================
 # Opdracht 4:
-# De eigenaar van dierentuin 'Het Zootje' heeft een lijst met dieren en hun aantallen.
+# De eigenaar van dierentuin 'Het Zootje' heeft een lijst met dieren en hun aantallen. De dieren en hun aantallen zijn opgeslagen in een dictionary.
+# Maak onderstaande deelopdrachten.
 #
 # Opdracht 4a:
 # De eigenaar wil de dieren op alfabetische volgorde zien. Sorteer de dieren op naam en print de dictionary uit.
