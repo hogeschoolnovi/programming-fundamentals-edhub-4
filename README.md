@@ -1,6 +1,6 @@
 # Opdrachtbeschrijving
 
-In deze repository vind je een aantal opdrachten die je kunt maken om te oefenen met **dictionaries** (woordenboeken) en **sets** in Python.
+In deze repository vind je een aantal opdrachten die je kunt maken om te oefenen met **dictionaries** (woordenboeken) en **sets** (verzamelingen) in Python.
 Deze repository bestaat uit meerdere opdrachten van oplopende moeilijkheidsgraad.
 
 **Let op!** 
