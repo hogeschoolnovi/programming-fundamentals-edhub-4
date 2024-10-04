@@ -23,7 +23,7 @@ print('getallen: ', getallen)  # Het resultaat is: {1, 2, 3, 4}
 # Voer de volgende opdrachten uit:
 # - Voeg de value 27 aan de verzameling toe.
 # - Verwijder de value 23 uit de verzameling.
-# - Druk alle values in de verzameling tussen 20 en 50 af.
+# - Druk alle values in de verzameling tussen 20 en 50 af. Gebruik hiervoor een for loop.
 #
 # Verwachte uitkomst: 36, 27, 44
 # ==========================================
@@ -46,21 +46,21 @@ for i in verzameling:
 # Opgave 2:
 # Gegeven de verzamelingen {red, blue, green} en {yellow, blue, green}
 # Zoek uit met behulp van wiskundige verzamelingsoperatoren of methodes:
-# - Welke kleur zit wel in verzameling_colors1 maar niet in verzameling_colors2?
+# - Welke kleur zit wel in verzameling_kleuren_1 maar niet in verzameling_kleuren_2?
 # - Welke kleuren zitten niet in beide sets? ('red' en 'yellow')
 #
 # Print de resultaten.
 # ==========================================
 
-verzameling_colors1 = {'red', 'blue', 'green'}
-verzameling_colors2 = {'yellow', 'blue', 'green'}
+verzameling_kleuren_1 = {'red', 'blue', 'green'}
+verzameling_kleuren_2 = {'yellow', 'blue', 'green'}
 
-#   checkt of de kleuren in verzameling_colors1 zitten maar niet in verzameling_colors2
-print(verzameling_colors1 - verzameling_colors2)
-print(verzameling_colors1.difference(verzameling_colors2))
+#   checkt of de kleuren in verzameling_kleuren_1 zitten maar niet in verzameling_kleuren_2
+print(verzameling_kleuren_1 - verzameling_kleuren_2)
+print(verzameling_kleuren_1.difference(verzameling_kleuren_2))
 #   checkt welke kleuren niet in beide sets zitten
-print(verzameling_colors1 ^ verzameling_colors2)
-print(verzameling_colors1.symmetric_difference(verzameling_colors2))
+print(verzameling_kleuren_1 ^ verzameling_kleuren_2)
+print(verzameling_kleuren_1.symmetric_difference(verzameling_kleuren_2))
 
 
 
