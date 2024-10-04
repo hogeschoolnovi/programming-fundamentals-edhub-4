@@ -15,8 +15,6 @@ fruit = {'appel': 'rood', 'banaan': 'geel'}
 print(fruit['banaan'])  # Het resultaat is: geel
 
 
-### WAARDE AANROEPEN
-
 # ==========================================
 # Opdracht 1:
 # Gegeven is de dictionary 'boodschappen' met daarin de keys 'Appels' en 'Brood'.
@@ -32,16 +30,6 @@ print(fruit['banaan'])  # Het resultaat is: geel
 
 boodschappen = {'Appels': 6, 'Brood': 2}
 
-# Opdracht 1a:
-print(boodschappen['Brood'])  # Het resultaat is: 2
-
-# Opdracht 1b:
-print(boodschappen.get('Appels', 'Niet gevonden'))  # Het resultaat is: 6
-print(boodschappen.get('Bananen', 'Niet gevonden'))  # Het resultaat is: Niet gevonden
-
-
-
-### WOORDENBOEKEN VERGELIJKEN
 
 # ==========================================
 # Opdracht 2:
@@ -56,37 +44,13 @@ print(boodschappen.get('Bananen', 'Niet gevonden'))  # Het resultaat is: Niet ge
 #
 # Opdracht 2c:
 # Vergelijk nu op dezelfde manier alle lijstjes. Zijn ze gelijk? Waarom wel/niet?
+# ==========================================
 
 boodschappenlijst_marie = {'Brood': 1, 'Appels': 6}
 boodschappenlijst_raj = {'Brood': 1, 'Appels': 6}
 boodschappenlijst_jan = {'Appels': 6, 'Brood': 1}
 boodschappenlijst_karel = {'Appels': 6, 'Brood': 25}
 
-# Opdracht 2a:
-if boodschappenlijst_marie == boodschappenlijst_raj:
-    print("De boodschappenlijstjes zijn gelijk.")
-else:
-    print("De boodschappenlijstjes zijn niet gelijk.")
-# Uitkomst: De boodschappenlijstjes zijn gelijk.
-
-# Opdraht 2b:
-if boodschappenlijst_marie == boodschappenlijst_raj == boodschappenlijst_jan:
-    print("De boodschappenlijstjes zijn gelijk.")
-else:
-    print("De boodschappenlijstjes zijn niet gelijk.")
-# Uitkomst: De boodschappenlijstjes zijn gelijk.
-# De dictionaries worden als gelijk beschouwd omdat de keys en values van de dictionaries overeenkomen.
-
-# Opdracht 2c:
-if boodschappenlijst_jan == boodschappenlijst_marie == boodschappenlijst_raj == boodschappenlijst_karel:
-    print("De boodschappenlijstjes zijn gelijk.")
-else:
-    print("De boodschappenlijstjes zijn niet gelijk.")
-# Uitkomst: De boodschappenlijstjes zijn niet gelijk.
-# De dictionaries worden niet als gelijk beschouwd omdat de values van de keys niet overeenkomen.
-
-
-### WOORDENBOEK AANPASSEN
 
 # ==========================================
 # Opdracht 2:
@@ -107,22 +71,9 @@ else:
 # De winkel gaat tafels verkopen en koopt er gelijk 15 in. Voeg de naam 'tafels' toe met een waarde van 15 en print de aangepaste dictionary.
 # Verwachte uitkomst: {'banken': 4, 'tafels': 15}
 # ==========================================
+
 meubels = {'banken': 10, 'stoelen': 20}
 
-# Opdracht 2a:
-meubels['banken'] -= 6
-print(meubels)  # Het resultaat is: {'banken': 4, 'stoelen': 20}
-
-# Opdracht 2b:
-del meubels['stoelen']
-print(meubels)  # Het resultaat is: {'banken': 4}
-
-# Opdracht 2c:
-meubels['tafels'] = 15
-print(meubels)  # Het resultaat is: {'banken': 4, 'tafels': 15}
-
-
-### LOOPEN DOOR WOORDENBOEK
 
 # ==========================================
 # Opdracht 3:
@@ -137,20 +88,11 @@ print(meubels)  # Het resultaat is: {'banken': 4, 'tafels': 15}
 
 cijfers = {'Jaap': 3, 'Winnie': 4, 'Jeroen': 9, 'Lana': 10}
 
-for naam, cijfer in cijfers.items():
-    if cijfer * 1.5 > 10:
-        cijfers[naam] = 10
-    else:
-        cijfers[naam] = cijfer * 1.5
-
-print(cijfers)  # Het resultaat is: {'Jaap': 4.5, 'Winnie': 6.0, 'Jeroen': 10, 'Lana': 10}
-
-
-### SORTEREN VAN WOORDENBOEK
 
 # ==========================================
 # Opdracht 4:
-# De eigenaar van dierentuin 'Het Zootje' heeft een lijst met dieren en hun aantallen.
+# De eigenaar van dierentuin 'Het Zootje' heeft een lijst met dieren en hun aantallen. De dieren en hun aantallen zijn opgeslagen in een dictionary.
+# Maak onderstaande deelopdrachten.
 #
 # Opdracht 4a:
 # De eigenaar wil de dieren op alfabetische volgorde zien. Sorteer de dieren op naam en print de dictionary uit.
@@ -161,15 +103,3 @@ print(cijfers)  # Het resultaat is: {'Jaap': 4.5, 'Winnie': 6.0, 'Jeroen': 10, '
 # ==========================================
 
 dieren = {'Olifant': 5, 'Zebra': 8, 'Aap': 12, 'Giraffe': 3, 'Neushoorn': 7}
-
-# Opdracht 4a:
-for dier in sorted(dieren.keys()):
-    print(dier, end=' ')
-# Het resultaat is: Aap Giraffe Leeuw Olifant Zebra
-
-print()  # Print een lege regel omdat anders de volgende print statement op dezelfe regel komt
-
-# Opdracht 4b:
-for aantal in sorted(dieren.values()):
-    print(aantal, end=' ')
-# Het resultaat is: 3 5 7 8 12
